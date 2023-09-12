@@ -3,7 +3,7 @@
 }
 
 <h1>Vehicle Sale Calculator</h1>
-<form asp-action="Display" method="post">
+<form asp-action="Display">
     <div>
         <label asp-for="VehYear">Year:</label>
         <input asp-for="VehYear" type="text" />
@@ -32,8 +32,8 @@
         <input asp-for="VehPrice" />
     </div>
     <div>
-        <label asp-for="VehDisount">Discount Amount (%):</label>
-        <input asp-for="VehDiscout"/>
+        <label asp-for="VehDiscount">Discount Amount (%):</label>
+        <input asp-for="VehDiscount" />
     </div>
     <div>
         <label asp-for="SaleTax">Sale Tax (%):</label>

@@ -4,6 +4,9 @@
 @{
 }
 <div>
-    <p>Hello, @Model.VehicleSaleModel</p>
+    <div>
+        <label>Future Value:</label>
+        <input value="@ViewBag.VS.ToString("C2")" readonly>
+    </div>
     <a asp-controller="Home" asp-action="Index">Back</a>
 </div>
