@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Vehicle Sale Calculator</h1>
+<form asp-action="Display" method="post">
+    <div>
+        <label asp-for="VehYear">Year:</label>
+        <input asp-for="VehYear" type="text" />
+    </div>
+    <div>
+        <label asp-for="VehMake">Make:</label>
+        <input asp-for="VehMake" type="text" />
+    </div>
+    <div>
+        <label asp-for="VehModel">Model:</label>
+        <input asp-for="VehModel" type="text" />
+    </div>
+    <div>
+        <label asp-for="VehType">Type:</label>
+        <select asp-for="VehType">
+            <option value="Hatchback">Hatchback</option>
+            <option value="Sedan">Sedan</option>
+            <option value="Coupe">Coupe</option>
+            <option value="Pickup">Pickup</option>
+            <option value="Crossover">Crossover</option>
+            <option value="SUV">SUV</option>
+        </select>
+    </div>
+    <div>
+        <label asp-for="VehPrice">Price:</label>
+        <input asp-for="VehPrice" />
+    </div>
+    <div>
+        <label asp-for="VehDisount">Discount Amount (%):</label>
+        <input asp-for="VehDiscout"/>
+    </div>
+    <div>
+        <label asp-for="SaleTax">Sale Tax (%):</label>
+        <input asp-for="SaleTax" />
+    </div>
+    <button type="submit">Calculate</button>
+    <a asp-action="Index">Clear</a>
+</form>
