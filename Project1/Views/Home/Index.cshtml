@@ -1,9 +1,12 @@
-﻿@{
+﻿@model VehicleSaleModel
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <h1>Vehicle Sale Calculator</h1>
-<form asp-action="Display">
+
+<form asp-action="Display" method="post">
+    
     <div>
         <label asp-for="VehYear">Year:</label>
         <input asp-for="VehYear" type="text" />
@@ -17,7 +20,7 @@
         <input asp-for="VehModel" type="text" />
     </div>
     <div>
-        <label asp-for="VehType">Type:</label>
+        <label>Type:</label>
         <select asp-for="VehType">
             <option value="Hatchback">Hatchback</option>
             <option value="Sedan">Sedan</option>

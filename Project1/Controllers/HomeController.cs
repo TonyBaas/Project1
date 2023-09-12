@@ -5,23 +5,19 @@ namespace Project1.Controllers
 {
     public class HomeController : Controller
     {
-
+        [HttpGet]
         public IActionResult Index()
         {
-            return View();
+            ViewBag.VS = 0;
+            ViewBag.VD = ""; 
+             return View();
         }
 
+        [HttpPost]
         public IActionResult Display(VehicleSaleModel model)
         {
-           if (ModelState.IsValid)
-            {
-                ViewBag.VS = model.VehicleSaleCal();
-            }
-            else
-            {
-                ViewBag.VS = 0;
-            }
-
+            ViewBag.VS = model.VehicleSaleCal();
+            ViewBag.VD = model.VehicleDisc();
             return View(model);
         }
     }
