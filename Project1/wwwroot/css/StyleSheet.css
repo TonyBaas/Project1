@@ -5,7 +5,7 @@
  */
 
 html{
-    background-color: dimgray;
+    background-color: rgb(40,40,40);
 }
 body {
     padding: 1em;
@@ -16,11 +16,10 @@ input {
 }
 
 h1 {
-    padding-left: 17em;
-    padding-right: 17em;
-    margin-top: 0;
+    width: 50%;
+    padding: 10px;
+    margin: auto;
     color: red;
-    
 }
 button.submitBtn {
     background-color: red;
@@ -36,14 +35,15 @@ label {
 }
 
 div {
+    
     margin-bottom: .5em;
 }
+
 div.displaySomething {
-    padding-left: 34em;
-    padding-right: 34em;
-    margin-bottom: .5em;
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+    background-color: dimgray;
+    border-radius: 20px;
 }
-form{
-   padding-left:34em;
-   padding-right: 34em;
-}
+
