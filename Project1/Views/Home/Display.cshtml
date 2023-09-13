@@ -1,7 +1,15 @@
-﻿@model VehicleSaleModel
+﻿<!--
+  Tony R Baas
+  Sept 12, 2023
+  File: Display.cshtml
+ -->
+
+<!-- Calls the VehicleSaleModel-->
+@model VehicleSaleModel 
 @{
     Layout = "_Layout";
 }
+
 <h1>Vehicle Sale Calculator</h1>
 
 <div class="displaySomething">
@@ -9,11 +17,11 @@
         <div asp-validation-summary="All"></div>
         <div>
             <label>Vehicle Discription:</label>
-            <input value="@ViewBag.VD.ToString()" readonly>
+            <input value="@ViewBag.VD.ToString()" readonly> <!-- Displays the Vehilce Discription-->
         </div>
         <div>
             <label>Final Price:</label>
-            <input value="@ViewBag.VS.ToString("C2")" readonly>
+            <input value="@ViewBag.VS.ToString("C2")" readonly>  <!-- Displays the Vehilce final price-->
         </div>
         
     </div>
