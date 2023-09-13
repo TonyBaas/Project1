@@ -4,7 +4,7 @@
   File: Display.cshtml
  -->
 
-<!-- Calls the VehicleSaleModel-->
+<!-- Calls the VehicleSaleModel -->
 @model VehicleSaleModel 
 @{
     Layout = "_Layout";
@@ -17,13 +17,13 @@
         <div asp-validation-summary="All"></div>
         <div>
             <label>Vehicle Discription:</label>
-            <input value="@ViewBag.VD.ToString()" readonly> <!-- Displays the Vehilce Discription-->
+            <input value="@ViewBag.VD.ToString()" readonly> <!-- Displays the Vehilce Discription -->
         </div>
         <div>
             <label>Final Price:</label>
-            <input value="@ViewBag.VS.ToString("C2")" readonly>  <!-- Displays the Vehilce final price-->
+            <input value="@ViewBag.VS.ToString("C2")" readonly>  <!-- Displays the Vehilce final price -->
         </div>
         
     </div>
-    <a asp-controller="Home" asp-action="Index">Back</a>
+    <a asp-controller="Home" asp-action="Index">Back</a> <!-- Back button -->
 </div>
