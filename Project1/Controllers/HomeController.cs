@@ -16,9 +16,20 @@ namespace Project1.Controllers
         [HttpPost]
         public IActionResult Display(VehicleSaleModel model)
         {
-            ViewBag.VS = model.VehicleSaleCal();
-            ViewBag.VD = model.VehicleDisc();
-            return View(model);
+            if (ModelState.IsValid)
+            {
+                ViewBag.VS = model.VehicleSaleCal();
+                ViewBag.VD = model.VehicleDisc();
+
+                return View(model);
+            }
+            else 
+            {
+                ViewBag.VS = 0;
+                ViewBag.VD = "";
+                return View();
+            }
+            
         }
     }
 }

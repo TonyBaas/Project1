@@ -1,19 +1,43 @@
-﻿body {
+﻿html{
+    background-color: dimgray;
+}
+body {
     padding: 1em;
     font-family: Arial, Helvetica, sans-serif;
 }
+input {
+    background-color:rgb(128 128 128);
+}
 
 h1 {
+    padding-left: 17em;
+    padding-right: 17em;
     margin-top: 0;
-    color: navy;
+    color: red;
+    
+}
+button.submitBtn {
+    background-color: red;
+    color: white;
+    border-radius: 20px;
 }
 
 label {
     display: inline-block;
     width: 10em;
     padding-right: 1em;
+    color: white;
 }
 
 div {
     margin-bottom: .5em;
+}
+div.displaySomething {
+    padding-left: 34em;
+    padding-right: 34em;
+    margin-bottom: .5em;
+}
+form{
+   padding-left:34em;
+   padding-right: 34em;
 }

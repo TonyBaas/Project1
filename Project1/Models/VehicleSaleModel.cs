@@ -28,17 +28,17 @@ namespace Project1.Models
         {
             decimal? price = VehPrice;
             decimal? discount = VehDiscount / 100;
-            decimal? salesTax = SaleTax / 100;
+            decimal? salesTax = 1 + (SaleTax / 100);
             decimal? finalPrice = 0;
       
             
             if (discount > 0 && salesTax > 0)
             {
-                finalPrice = price + ((price - (price * discount))*salesTax);
+                finalPrice = (price - (price * discount))*salesTax;
             }
             else if (discount == 0 && salesTax > 0)
             {
-                finalPrice = price + (price * salesTax);
+                finalPrice = price * salesTax;
             }
             else
             {
